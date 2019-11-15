@@ -1,6 +1,8 @@
 def starts_with_a_vowel?(word)
-  word.each do |wrd|
-  wrd.scan(/\b[aeiouAEIOU]/)? true : false
+  if word.scan(/\b[aeiouAEIOU]/)
+    puts true
+  else
+    puts false
 end
 end
 
